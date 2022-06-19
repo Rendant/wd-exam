@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input" placeholder="Введите число!">
+<input type="text" id="output" placeholder="Здесь появиться результат" disabled="true">
+<button onclick="sqr()">Нажми на меня!</button>
+</body>
+<script>
+    function sqr() {
+        var input = document.getElementById('input')
+        var output = document.getElementById('output')
+        var number = Number(input.value)
+        output.value = number * number
+    }
+</script>
+</html>
